@@ -1,0 +1,219 @@
+body {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    background: url('imagens/imagem fluxo.jpg') center/cover no-repeat;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(15, 15, 15, 0.658), rgba(43, 41, 41, 0.651), rgb(0, 0, 0));
+    border-radius: 12px;
+    z-index: 1; /* Coloque o pseudo-elemento atrás de git-text e top-bar */
+}
+
+h5{ 
+    color: #ffffff;
+}
+
+.main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 12px;
+    background-color: #333;
+}
+
+form input {
+    border: none;
+    border-radius: 8px; /* Cantos mais arredondados */
+    padding: 15px; /* Aumenta o espaçamento interno dos campos de entrada */
+    background-color: rgb(70, 70, 70); /* Cor de fundo branca para destacar os campos de entrada */
+    width: 100%; /* Define a largura dos campos de entrada como 100% */
+    margin-bottom: 20px;
+    
+}
+
+form input[type='email'],
+form input[type='password'] {
+    margin-bottom: 30px;
+}
+
+form {
+    width: 400px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+form label[for='email'],
+form label[for='senha'] {
+    color: white;
+    text-align: left;
+    display: block;
+    margin-bottom: 0px;
+    width: 100%; /* Garante que o rótulo ocupe toda a largura do contêiner pai */
+}
+
+form button {
+    margin-top: 15px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00ff0d; /* Cor de fundo vermelha para o botão */
+    color: white; /* Cor do texto do botão */
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Adicione este bloco para estilizar o botão "Lembre-se" */
+#lembre-se-btn {
+    background-color: #00ff0d; /* Cor de fundo vermelha para o botão "Lembre-se" */
+    color: white; /* Cor do texto do botão "Lembre-se" */
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.header h1 {
+    color: #ffffff; /* Set the text color to white */
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-buttons button {
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #313030; /* Use your desired background color */
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    max-width: 800px; /* Adjust the max-width as needed */
+    display: flex;
+    align-items: center;
+    font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+
+
+.git-text {
+    display: flex;
+    align-items: center;
+    margin-left: 300px; /* Adicione margem à direita conforme necessário */
+}
+
+.git-fluxo-left {
+    font-size: 35px; /* Ajuste o tamanho da fonte conforme necessário */
+    text-decoration: underline;
+    color: white;
+    margin-right: 50px; /* Adicione margem à direita conforme necessário */
+
+}
+
+.top-image {
+    width: 50px; /* Ajuste a largura da imagem conforme necessário */
+    height: 50px; /* Ajuste a altura da imagem conforme necessário */
+    margin-left: 10px; /* Adicione margem à esquerda conforme necessário */
+}
+
+.top-text-right {
+    font-size: 35px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: white;
+    margin-right: 500px; /* Adicione margem à direita conforme necessário */
+
+}
+
+
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background: url('imagens/imagem fluxo.jpg') center/cover no-repeat;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    position: fixed; /* Fixa a barra superior no topo da página */
+    top: 0; /* Garante que a barra superior esteja no topo */
+    z-index: 2; /* Coloque a top-bar à frente do pseudo-elemento */
+}
+
+.top-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.top-text {
+    color: white;
+    font-size: 30px;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 70px; /* Ajuste conforme necessário para evitar sobreposição com a barra superior */
+}
+
+
+.footer {
+    padding: 30px;
+    text-align: center;
+    position: fixed; /* Fixa o rodapé na parte inferior da tela */
+    width: 100%;
+    bottom: 60px; /* Alinha o rodapé à parte inferior */
+    z-index: 2;
+    font-size: 20px;
+}
+
+.footer p {
+    display: inline;
+    margin: 0 10px;
+    color: #ffffff;
+}
+

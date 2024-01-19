@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitFluxo</title>
+    <link rel="stylesheet" href="./gitFluxo_style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="git-text">
+            <p class="git-fluxo-left">Git Fluxo</p>
+            <img src="imagens/git.png" alt="Imagem" class="top-image">
+        </div>
+        <div class="git-text">
+            <p class="top-text-right">Let's build from here</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Sign in to GitFluxo</h1>
+        </div>
+
+        <div class='main'>
+            <form>
+                <label for='email'>Username or email adress </label>
+                <input type='email' id='email' />
+
+                <label for='senha'>Password </label>
+                <input type='password' id='senha' />
+
+                <button>Remember me</button>
+
+                <button onclick="signIn()">Sing In</button>
+                
+                <h5>or</h5>
+
+                <div class="social-buttons">
+                    <button class="google-btn" onclick="continueWithGoogle()">
+                        <img src="imagens/google.png" alt="Google Icon" class="social-icon">
+                        Continue with Google
+                    </button>
+                    <button class="facebook-btn" onclick="continueWithFacebook()">
+                        <img src="imagens/fb.png" alt="Facebook Icon" class="social-icon">
+                        Continue with Facebook
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Terms</p>
+        <p>Privacy</p>
+        <p>Docs</p>
+        <p>Contact Support</p>
+        <p>Do Not Share My Personal Information</p>
+    </div>
+
+    <script src="./gitFluxo.js"></script> 
+</body>
+</html>
