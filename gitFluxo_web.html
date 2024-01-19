@@ -1,47 +1,75 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- A seção head contém informações adicionais sobre o documento HTML -->
+
     <meta charset="UTF-8">
+    <!-- Especifica a codificação de caracteres do documento como UTF-8 -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>GitFluxo</title>
+    <!-- Define o título do documento HTML que aparecerá na aba do navegador -->
+
     <link rel="stylesheet" href="./gitFluxo_style.css">
+    <!-- Vincula um arquivo de estilo externo para o documento HTML -->
 </head>
+
+
 <body>
 
     <div class="top-bar">
+        <!-- Uma div para a barra superior da página -->
+
         <div class="git-text">
+            <!-- Uma div para o texto GitFluxo e o logotipo no lado esquerdo da barra superior -->
             <p class="git-fluxo-left">Git Fluxo</p>
+            <!-- Frase da esqueda -->
             <img src="imagens/git.png" alt="Imagem" class="top-image">
-        </div>
+            <!-- adição da imagem -->
+        </div>        
+        
         <div class="git-text">
             <p class="top-text-right">Let's build from here</p>
+            <!-- Frase da direita -->
         </div>
     </div>
+
+
     <div class="container">
+    <!-- conteúdo principal da página -->
+
         <div class="header">
+        <!-- Uma div para a seção de cabeçalho -->
             <h1>Sign in to GitFluxo</h1>
+            <!-- Título principal da página -->
         </div>
 
         <div class='main'>
             <form>
+                <!-- formulário para o login do usuário -->
                 <label for='email'>Username or email adress </label>
                 <input type='email' id='email' />
+                <!-- campo de entrada do e-mail -->
 
                 <label for='senha'>Password </label>
                 <input type='password' id='senha' />
+                <!-- campo de entrada de senha -->
 
                 <button>Remember me</button>
+                <!-- Botão para a funcionalidade de lembrar do email e senha -->
 
                 <button onclick="signIn()">Sing In</button>
+                <!-- Botão para fazer login com um evento onclick chamando uma função JavaScript -->
                 
                 <h5>or</h5>
 
                 <div class="social-buttons">
-                    <button class="google-btn" onclick="continueWithGoogle()">
+                    <!-- Uma div para os botões de login de mídia social -->
+                    <button class="google-btn" >
                         <img src="imagens/google.png" alt="Google Icon" class="social-icon">
                         Continue with Google
                     </button>
-                    <button class="facebook-btn" onclick="continueWithFacebook()">
+                    <button class="facebook-btn" >
                         <img src="imagens/fb.png" alt="Facebook Icon" class="social-icon">
                         Continue with Facebook
                     </button>
@@ -50,7 +78,10 @@
         </div>
     </div>
 
+
+
     <div class="footer">
+        <!-- Uma div para a seção de rodapé -->
         <p>Terms</p>
         <p>Privacy</p>
         <p>Docs</p>
@@ -59,5 +90,6 @@
     </div>
 
     <script src="./gitFluxo.js"></script> 
+    <!-- Tag para incluir um arquivo JavaScript externo -->
 </body>
 </html>

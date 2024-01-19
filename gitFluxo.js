@@ -1,5 +1,3 @@
-// script.js
-
 // Função para ser chamada ao clicar no botão "Sing In"
 function signIn() {
     // Obter valores dos campos
